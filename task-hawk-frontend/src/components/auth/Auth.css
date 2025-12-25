@@ -1,0 +1,34 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ECF4F8 0%, #ffffff 100%);
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(17, 74, 146, 0.15);
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+
+.auth-title {
+  color: #114A92;
+  font-family: 'Lilita One', cursive;
+  margin-bottom: 2rem;
+}
+
+.auth-link {
+  color: #2678E1;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}

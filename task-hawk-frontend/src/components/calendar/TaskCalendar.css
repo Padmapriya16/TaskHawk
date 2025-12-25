@@ -1,0 +1,387 @@
+.calendar-container {
+  background: linear-gradient(135deg, #ECF4F8 0%, #ffffff 100%);
+  min-height: 100vh;
+  padding: 0px 0 40px 0;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.calendar-title {
+  color: #114A92;
+  font-weight: 700;
+  font-family: 'Lilita One', cursive;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.calendar-subtitle {
+  color: #666;
+  font-weight: 400;
+}
+
+.calendar-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(17, 74, 146, 0.15);
+  background: white;
+  overflow: hidden;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ECF4F8;
+}
+
+.view-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid #2678E1;
+}
+
+.view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(38, 120, 225, 0.3);
+}
+
+.view-icon {
+  font-size: 1rem;
+}
+
+.calendar-wrapper {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* React Big Calendar Customization */
+.rbc-calendar {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.rbc-header {
+  background: linear-gradient(135deg, #114A92 0%, #2678E1 100%);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0.5rem;
+  border: none;
+}
+
+.rbc-month-view {
+  border: 1px solid #ECF4F8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rbc-date-cell {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.rbc-date-cell.rbc-off-range {
+  color: #ccc;
+}
+
+.rbc-today {
+  background-color: rgba(38, 120, 225, 0.1);
+}
+
+.rbc-event {
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rbc-event:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.rbc-slot-selection {
+  background-color: rgba(38, 120, 225, 0.2);
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border-top: 1px solid #ECF4F8;
+}
+
+.rbc-time-view .rbc-header {
+  border-bottom: 1px solid #ECF4F8;
+}
+
+.rbc-agenda-view table {
+  border: 1px solid #ECF4F8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.rbc-agenda-view .rbc-agenda-date-cell,
+.rbc-agenda-view .rbc-agenda-time-cell {
+  border-left: 1px solid #ECF4F8;
+}
+
+/* Sidebar Cards */
+.stats-sidebar-card, .upcoming-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(17, 74, 146, 0.15);
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.stats-sidebar-card:hover, .upcoming-card:hover {
+  box-shadow: 0 8px 32px rgba(17, 74, 146, 0.25);
+}
+
+.sidebar-title {
+  color: #114A92;
+  font-weight: 600;
+  font-family: 'League Spartan', sans-serif;
+  border-bottom: 2px solid #ECF4F8;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #ECF4F8 0%, #ffffff 100%);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-stat:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(17, 74, 146, 0.1);
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #114A92;
+  font-family: 'Lilita One', cursive;
+}
+
+.stat-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.upcoming-events {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.upcoming-event {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-bottom: 0.5rem;
+}
+
+.upcoming-event:hover {
+  background: linear-gradient(135deg, #ECF4F8 0%, #ffffff 100%);
+  border-color: #2678E1;
+  transform: translateX(4px);
+}
+
+.event-indicator {
+  width: 4px;
+  height: 40px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event-title {
+  color: #114A92;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.event-time {
+  color: #666;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.event-type-chip {
+  font-size: 0.7rem;
+  height: 20px;
+}
+
+.no-events {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+
+/* Floating Action Button */
+.fab-add {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: linear-gradient(45deg, #2678E1, #114A92);
+  box-shadow: 0 8px 32px rgba(38, 120, 225, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.fab-add:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 40px rgba(38, 120, 225, 0.6);
+}
+
+/* Modal Styles */
+.modal-header-custom {
+  background: linear-gradient(135deg, #114A92 0%, #2678E1 100%);
+  color: white;
+  border-bottom: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modal-header-custom .btn-close {
+  filter: invert(1);
+}
+
+.modal-body-custom {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .calendar-container {
+    padding: 100px 0 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-title {
+    font-size: 2rem;
+  }
+  
+  .calendar-controls {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .view-buttons {
+    justify-content: center;
+  }
+  
+  .view-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .sidebar-stats {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+  }
+  
+  .sidebar-stat {
+    min-width: 120px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .fab-add {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .calendar-title {
+    font-size: 1.5rem;
+  }
+  
+  .view-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .rbc-calendar {
+    font-size: 0.8rem;
+  }
+  
+  .rbc-header {
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .upcoming-event {
+    padding: 0.75rem;
+  }
+  
+  .modal-body-custom {
+    padding: 1rem;
+  }
+}
+
+/* Custom scrollbar for upcoming events */
+.upcoming-events::-webkit-scrollbar {
+  width: 6px;
+}
+
+.upcoming-events::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.upcoming-events::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #2678E1, #114A92);
+  border-radius: 3px;
+}
+
+.upcoming-events::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #114A92, #2678E1);
+}
